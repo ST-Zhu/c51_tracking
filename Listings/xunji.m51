@@ -1,0 +1,284 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        06/15/2018  15:36:26  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+D:\PROGRAM FILES\KEIL_V5\C51\BIN\BL51.EXE .\Objects\xunji.obj TO .\Objects\xunji PRINT (.\Listings\xunji.m51) RAMSIZE (2
+>> 56)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\xunji.obj (XUNJI)
+  D:\PROGRAM FILES\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
+
+
+LINK MAP OF MODULE:  .\Objects\xunji (XUNJI)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0004H     UNIT         ?DT?XUNJI
+            IDATA   000CH     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     0008H     UNIT         ?PR?MAIN?XUNJI
+            CODE    000BH     0003H     ABSOLUTE     
+            CODE    000EH     0097H     UNIT         ?PR?XUANJI?XUNJI
+            CODE    00A5H     0041H     UNIT         ?PR?TIMER0?XUNJI
+            CODE    00E6H     0014H     UNIT         ?PR?INIT?XUNJI
+            CODE    00FAH     000FH     UNIT         ?PR?ZHIXING?XUNJI
+            CODE    0109H     000FH     UNIT         ?PR?YOUZHUAN_2?XUNJI
+            CODE    0118H     000FH     UNIT         ?PR?YOUZHUAN_3?XUNJI
+            CODE    0127H     000FH     UNIT         ?PR?YOUZHUAN_1?XUNJI
+            CODE    0136H     000FH     UNIT         ?PR?ZUOZHUAN_2?XUNJI
+            CODE    0145H     000FH     UNIT         ?PR?ZUOZHUAN_3?XUNJI
+            CODE    0154H     000FH     UNIT         ?PR?ZUOZHUAN_1?XUNJI
+            CODE    0163H     000FH     UNIT         ?PR?HOUTUI?XUNJI
+            CODE    0172H     000CH     UNIT         ?C_C51STARTUP
+
+
+
+OVERLAY MAP OF MODULE:   .\Objects\xunji (XUNJI)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?XUNJI
+
+?PR?MAIN?XUNJI
+  +--> ?PR?INIT?XUNJI
+  +--> ?PR?XUANJI?XUNJI
+
+?PR?XUANJI?XUNJI
+  +--> ?PR?ZHIXING?XUNJI
+BL51 BANKED LINKER/LOCATER V6.22                                                      06/15/2018  15:36:26  PAGE 2
+
+
+  +--> ?PR?YOUZHUAN_3?XUNJI
+  +--> ?PR?YOUZHUAN_2?XUNJI
+  +--> ?PR?YOUZHUAN_1?XUNJI
+  +--> ?PR?ZUOZHUAN_3?XUNJI
+  +--> ?PR?ZUOZHUAN_2?XUNJI
+  +--> ?PR?ZUOZHUAN_1?XUNJI
+  +--> ?PR?HOUTUI?XUNJI
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\xunji (XUNJI)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        XUNJI
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  B:00A0H.4       PUBLIC        L3
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  B:00A0H.3       PUBLIC        R1
+  D:00B0H         PUBLIC        P3
+  B:00A0H.2       PUBLIC        R2
+  B:00A0H.5       PUBLIC        R3
+  C:00FAH         PUBLIC        zhixing
+  B:00A8H.7       PUBLIC        EA
+  D:00A8H         PUBLIC        IE
+  C:000EH         PUBLIC        xuanji
+  D:00B8H         PUBLIC        IP
+  C:0127H         PUBLIC        youzhuan_1
+  C:0154H         PUBLIC        zuozhuan_1
+  C:0109H         PUBLIC        youzhuan_2
+  C:0136H         PUBLIC        zuozhuan_2
+  C:0118H         PUBLIC        youzhuan_3
+  C:0145H         PUBLIC        zuozhuan_3
+  D:0008H         PUBLIC        PWM_L
+  C:0163H         PUBLIC        houtui
+  C:0003H         PUBLIC        main
+  D:0009H         PUBLIC        PWM_R
+  D:0098H         PUBLIC        SCON
+  D:0089H         PUBLIC        TMOD
+  D:0088H         PUBLIC        TCON
+  C:00E6H         PUBLIC        init
+  B:0090H.1       PUBLIC        IN1
+  B:0090H.2       PUBLIC        IN2
+  B:00A8H.1       PUBLIC        ET0
+  B:0090H.3       PUBLIC        IN3
+  B:0090H.4       PUBLIC        IN4
+  D:008CH         PUBLIC        TH0
+  D:008AH         PUBLIC        TL0
+  C:00A5H         PUBLIC        timer0
+  B:0090H.0       PUBLIC        ENA
+  B:0090H.5       PUBLIC        ENB
+  B:0088H.4       PUBLIC        TR0
+  D:000AH         PUBLIC        count_L
+  D:000BH         PUBLIC        count_R
+  D:00C8H         PUBLIC        T2CON
+BL51 BANKED LINKER/LOCATER V6.22                                                      06/15/2018  15:36:26  PAGE 3
+
+
+  D:00D0H         PUBLIC        PSW
+  B:00A0H.0       PUBLIC        L1
+  B:00A0H.1       PUBLIC        L2
+  -------         PROC          INIT
+  C:00E6H         LINE#         24
+  C:00E6H         LINE#         25
+  C:00E6H         LINE#         26
+  C:00E9H         LINE#         27
+  C:00ECH         LINE#         28
+  C:00EFH         LINE#         29
+  C:00F1H         LINE#         30
+  C:00F3H         LINE#         31
+  C:00F5H         LINE#         33
+  C:00F7H         LINE#         34
+  C:00F9H         LINE#         35
+  -------         ENDPROC       INIT
+  -------         PROC          ZHIXING
+  C:00FAH         LINE#         37
+  C:00FAH         LINE#         38
+  C:00FAH         LINE#         39
+  C:00FDH         LINE#         40
+  C:0100H         LINE#         41
+  C:0102H         LINE#         42
+  C:0104H         LINE#         43
+  C:0106H         LINE#         44
+  C:0108H         LINE#         45
+  -------         ENDPROC       ZHIXING
+  -------         PROC          YOUZHUAN_2
+  C:0109H         LINE#         47
+  C:0109H         LINE#         48
+  C:0109H         LINE#         49
+  C:010CH         LINE#         50
+  C:010FH         LINE#         51
+  C:0111H         LINE#         52
+  C:0113H         LINE#         53
+  C:0115H         LINE#         54
+  C:0117H         LINE#         55
+  -------         ENDPROC       YOUZHUAN_2
+  -------         PROC          YOUZHUAN_3
+  C:0118H         LINE#         57
+  C:0118H         LINE#         58
+  C:0118H         LINE#         59
+  C:011BH         LINE#         60
+  C:011EH         LINE#         61
+  C:0120H         LINE#         62
+  C:0122H         LINE#         63
+  C:0124H         LINE#         64
+  C:0126H         LINE#         65
+  -------         ENDPROC       YOUZHUAN_3
+  -------         PROC          YOUZHUAN_1
+  C:0127H         LINE#         67
+  C:0127H         LINE#         68
+  C:0127H         LINE#         69
+  C:012AH         LINE#         70
+  C:012DH         LINE#         71
+  C:012FH         LINE#         72
+  C:0131H         LINE#         73
+BL51 BANKED LINKER/LOCATER V6.22                                                      06/15/2018  15:36:26  PAGE 4
+
+
+  C:0133H         LINE#         74
+  C:0135H         LINE#         75
+  -------         ENDPROC       YOUZHUAN_1
+  -------         PROC          ZUOZHUAN_2
+  C:0136H         LINE#         77
+  C:0136H         LINE#         78
+  C:0136H         LINE#         79
+  C:0139H         LINE#         80
+  C:013CH         LINE#         81
+  C:013EH         LINE#         82
+  C:0140H         LINE#         83
+  C:0142H         LINE#         84
+  C:0144H         LINE#         85
+  -------         ENDPROC       ZUOZHUAN_2
+  -------         PROC          ZUOZHUAN_3
+  C:0145H         LINE#         87
+  C:0145H         LINE#         88
+  C:0145H         LINE#         89
+  C:0148H         LINE#         90
+  C:014BH         LINE#         91
+  C:014DH         LINE#         92
+  C:014FH         LINE#         93
+  C:0151H         LINE#         94
+  C:0153H         LINE#         95
+  -------         ENDPROC       ZUOZHUAN_3
+  -------         PROC          ZUOZHUAN_1
+  C:0154H         LINE#         97
+  C:0154H         LINE#         98
+  C:0154H         LINE#         99
+  C:0157H         LINE#         100
+  C:015AH         LINE#         101
+  C:015CH         LINE#         102
+  C:015EH         LINE#         103
+  C:0160H         LINE#         104
+  C:0162H         LINE#         105
+  -------         ENDPROC       ZUOZHUAN_1
+  -------         PROC          HOUTUI
+  C:0163H         LINE#         107
+  C:0163H         LINE#         108
+  C:0163H         LINE#         109
+  C:0166H         LINE#         110
+  C:0169H         LINE#         111
+  C:016BH         LINE#         112
+  C:016DH         LINE#         113
+  C:016FH         LINE#         114
+  C:0171H         LINE#         115
+  -------         ENDPROC       HOUTUI
+  -------         PROC          XUANJI
+  C:000EH         LINE#         117
+  C:000EH         LINE#         118
+  C:000EH         LINE#         119
+  C:0023H         LINE#         121
+  C:0032H         LINE#         122
+  C:0044H         LINE#         123
+  C:0059H         LINE#         125
+  C:0068H         LINE#         126
+  C:007AH         LINE#         127
+BL51 BANKED LINKER/LOCATER V6.22                                                      06/15/2018  15:36:26  PAGE 5
+
+
+  C:008FH         LINE#         129
+  C:00A4H         LINE#         130
+  -------         ENDPROC       XUANJI
+  -------         PROC          MAIN
+  C:0003H         LINE#         132
+  C:0003H         LINE#         133
+  C:0003H         LINE#         134
+  C:0006H         LINE#         135
+  C:0006H         LINE#         136
+  C:0006H         LINE#         137
+  C:0009H         LINE#         138
+  -------         ENDPROC       MAIN
+  -------         PROC          TIMER0
+  C:00A5H         LINE#         141
+  C:00A9H         LINE#         143
+  C:00ABH         LINE#         144
+  C:00ADH         LINE#         146
+  C:00B4H         LINE#         147
+  C:00B8H         LINE#         149
+  C:00BAH         LINE#         150
+  C:00BFH         LINE#         151
+  C:00BFH         LINE#         152
+  C:00C1H         LINE#         153
+  C:00C4H         LINE#         154
+  C:00C4H         LINE#         156
+  C:00CBH         LINE#         157
+  C:00CFH         LINE#         159
+  C:00D1H         LINE#         160
+  C:00D6H         LINE#         161
+  C:00D6H         LINE#         162
+  C:00D8H         LINE#         163
+  C:00DBH         LINE#         164
+  C:00DBH         LINE#         166
+  C:00DEH         LINE#         167
+  C:00E1H         LINE#         168
+  -------         ENDPROC       TIMER0
+  -------         ENDMOD        XUNJI
+
+Program Size: data=13.0 xdata=0 code=382
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
